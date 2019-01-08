@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Prata";
+  src: url("../font/Prata-Regular.woff2") format("woff2"),
+       url("../font/Prata-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../font/PTSans-Regular.woff2") format("woff2"),
+       url("../font/PTSans-Bold.woff2") format("woff2"),
+       url("../font/PTSans-Regular.woff") format("woff"),
+       url("../font/PTSans-Bold.woff") format("woff");
+}
+
+
+.container {
+  padding: 0 17px;
+}
+
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  width: 320px; 
+  margin: auto;
+
+}
+.page-header{
+  background-image: url(../img/bg_promo.jpg);
+  background-repeat: no-repeat;
+  height: 536px;
+}
+.page-header__top {
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  position: absolute;
+  width: 320px;
+  top: 0;
+  background-color: #000;
+}
+.logo {
+  font-family: "Prata";
+  font-size: 30px;
+  color: #eec643;
+  text-decoration: none;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  color: #f9fcfc;
+}
+
+.main-nav__item {
+  text-decoration: none;
+  color: #fff;
+}
+
+.page-header__promo {
+  display: flex;
+  margin: 0 17px;
+  color: #f9fcfc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.page-header__promo-title {
+  font-family: "Prata";
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: normal;
+
+}
+
+.page-header__promo-descr {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.page-header__btn{
+  width: 288px;
+  margin: auto;
+  background-color: #eec643;
+  position: absolute;
+  bottom: 130px;
+
+}
+
+.page-header__btn-text {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  padding: 0px 70px;
+}
+
+.genres_item, .advantages_item {
+  display: flex;
+  flex-direction: column;
+  height: 144px;
+  padding-left: 17px;
+  margin: 8px 0;
+}
+
+.genres-title, .advantages-title, .video-title, .location-title {
+  font-family: "Prata";
+  font-size: 30px;
+  line-height: 30px;
+  color: #021a23;
+  padding: 5px 0px;
+  padding-left: 17px;
+
+
+  border-top: 1px solid #eec643;
+  border-bottom: 1px solid #eec643;
+}
+
+.genres__item-title, .advantages__item-title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: bold;
+  color: #f9fcfc;
+  padding-top: 31px;
+}
+
+.genres__item-descr, .advantages__item-descr {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: normal;
+  color: #f9fcfc;
+}
+
+.genres__item-price {
+  display: none;
+}
+
+.genres__item--bg-vocal {
+  background-image: url(../img/directions_card_img_2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.genres__item--bg-guiter {
+  background-image: url(../img/directions_card_img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.genres__item--bg-fortepiano {
+  background-image: url(../img/directions_card_img_3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.genres__item--bg-lections {
+  display: none;
+}
+
+.genres__item--bg-all {
+  background-color: #eec643;
+}
+.genres__item-all{
+  font-family: "PT Sans";
+  font-size: 16px;
+  color: #213127;
+  transform: rotate(270deg);
+}
+
+.advantages_item-introductory-lesson {
+  background-color: #eec643;
+}
+.genres__item-introductory-lesson {
+  font-family: "PT Sans";
+  font-size: 16px;
+  transform: rotate(270deg);
+}
+
+.advantages__item--bg-stuff {
+  background-image: url(../img/advantages_card_img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item--bg-result {
+  background-image: url(../img/advantages_card_img_2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item--bg-studio {
+  background-image: url(../img/advantages_card_img_3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.carousel_item {
+  height: 186px;
+  width: 240px;
+}
+
+.carousel_item-1 {
+  background-image: url(../img/video_mobile_card_img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.carousel_item-2 {
+  background-image: url(../img/video_mobile_card_img_2.jpg);
+}
+.carousel_item-3 {
+  background-image: url(../img/video_mobile_card_img_3.jpg);
+}
+.carousel_item-4 {
+  background-image: url(../img/video_mobile_card_img_4.jpg);
+}
+
+.col--lg-1 { width: 25%; }
+.col--lg-2 { width: 50%; }
+.col--lg-3 { width: 75%; }
+.col--lg-4 { width: 100%; }
+.col--lg-first { order: -1; }
+
+
+
+@media (min-width: 1280px) {
+
+}
+
