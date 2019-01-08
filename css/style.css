@@ -99,6 +99,13 @@
   padding: 0px 70px;
 }
 
+.genres, .advantages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .genres_item, .advantages_item {
   display: flex;
   flex-direction: column;
@@ -125,7 +132,8 @@
   font-size: 18px;
   font-weight: bold;
   color: #f9fcfc;
-  padding-top: 31px;
+  padding-top: 14px;
+  margin-bottom: 0;
 }
 
 .genres__item-descr, .advantages__item-descr {
@@ -142,19 +150,19 @@
 .genres__item--bg-vocal {
   background-image: url(../img/directions_card_img_2.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .genres__item--bg-guiter {
   background-image: url(../img/directions_card_img_1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .genres__item--bg-fortepiano {
   background-image: url(../img/directions_card_img_3.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .genres__item--bg-lections {
@@ -162,9 +170,16 @@
 }
 
 .genres__item--bg-all {
+  position: relative;
   background-color: #eec643;
+  height: 144px;
+  width: 20%;
 }
 .genres__item-all{
+  position: absolute;
+  bottom: 25%;
+  left: -35%;
+
   font-family: "PT Sans";
   font-size: 16px;
   color: #213127;
@@ -172,51 +187,124 @@
 }
 
 .advantages_item-introductory-lesson {
+  position: relative;
+
   background-color: #eec643;
+  height: 144px;
+  width: 20%;
 }
 .genres__item-introductory-lesson {
+  position: absolute;
+  bottom: 15%;
+  left: -5%;
+
   font-family: "PT Sans";
   font-size: 16px;
-  transform: rotate(270deg);
+  transform: rotate(-90deg);
+  
+  color: white;
 }
 
 .advantages__item--bg-stuff {
   background-image: url(../img/advantages_card_img_1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .advantages__item--bg-result {
   background-image: url(../img/advantages_card_img_2.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .advantages__item--bg-studio {
   background-image: url(../img/advantages_card_img_3.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
-.carousel_item {
-  height: 186px;
+.slick-track {
   width: 240px;
+  height: 186px;
 }
 
 .carousel_item-1 {
   background-image: url(../img/video_mobile_card_img_1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .carousel_item-2 {
   background-image: url(../img/video_mobile_card_img_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .carousel_item-3 {
   background-image: url(../img/video_mobile_card_img_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .carousel_item-4 {
   background-image: url(../img/video_mobile_card_img_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.carousel_item {
+
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: normal;
+  color: #f9fcfc;
+  padding-left: 11px;
+  padding-right: 15px;
+  padding-top: 135px;
+}
+.video-carousel-title {
+  font-weight: bold;
+}
+
+.video-title_not-displayed {
+  display: none;
+}
+.address {
+  display: inline-block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+.map {
+  width: 100%;
+  height: 216px;
+
+  margin-bottom: 35px;
+}
+
+.introductory-lesson__btn {
+  width: 100%;
+  height: 60px;
+  background-color: #eec643;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: normal;
+  color: #f9fcfc;
+  line-height: 22px;
+ 
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  margin-bottom: 32px;
+}
+
+
+.footer{
+  display: none;
+}
+
+
 
 .col--lg-1 { width: 25%; }
 .col--lg-2 { width: 50%; }
