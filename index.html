@@ -16,7 +16,7 @@
 
 
 
-<header class="page-header mobile-container">
+<header class="page-header mobile-container container">
 	<div class="page-header__top col row">
 		<div class="col col--lg-1">
 			<a href="#" class="logo">Diez</a>
@@ -35,7 +35,7 @@
 	</div>
 	<div class="page-header__promo  row">
 		<div class="col  col--lg-3">
-			<h1 class="page-header__promo-title">Школа музыкального искусства</h1>
+			<h1 class="page-header__promo-title"><span class="title-full">Diez - ш</span><span class="uppercase">ш</span>кола музыкального искусства</h1>
 			<div class="page-header__promo-descr">
 				<p>Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</p>
 			</div>
@@ -43,6 +43,19 @@
 		<div class="col page-header__btn">
 			<h4 class="page-header__btn-text">ВВОДНЫЙ УРОК</h4>
 		</div>
+			<form class="form__promo">
+				<h4 class="form__title">Вводный урок</h4>
+				<span class="form__text">Попробуй любые направления бесплатно</span>
+				<input class="form__input_txt" type="text" name="name" placeholder="Имя">
+				<input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+				<select class="form__input_txt select" name="lessons" id="">
+					<option value="" style='display:none;'>Направления</option>
+					<option class="form__option" value="">Гитара</option>
+					<option class="form__option" value="">Вокал</option>
+					<option class="form__option" value="">Фортепиано</option>
+				</select>
+				<input class="form__btn form__btn_promo" type="submit" value="Записаться">
+			</form>
 	</div>
 </header>
 
