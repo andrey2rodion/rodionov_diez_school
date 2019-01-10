@@ -312,6 +312,10 @@
 .form__promo {
   display: none;
 }
+
+.genres_desctop-txt{
+  display: none;
+}
 .col--sm-1 { width: 25%; }
 .col--sm-2 { width: 50%; }
 .col--sm-3 { width: 75%; }
@@ -578,6 +582,32 @@ body {
   font-weight: bold;
 
   padding-top: 0;
+  padding-left: 19px;
+}
+
+.genres_desctop-txt {
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  
+  padding-top: 10px;
+  padding-left: 19px;
+}
+
+.genres_desctop-txt-half {
+  width: 69%;
+}
+.genres__item-price {
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  padding-left: 19px;
+  color: #f9fcfc;
+  padding-top: 40px;
 }
 
 .col--lg-1 { width: 25%; }
