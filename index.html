@@ -104,40 +104,57 @@
 </section>
 
 <section class="advantages mobile-container">
-	<h2 class="advantages-title col--sm-3">Задаем темп</h2>
-		<div class="col col--sm-4">
-			<div class="advantages_item advantages__item--bg-stuff">
-				<h3 class="advantages__item-title">Состав</h3>
-				<div class="advantages__item-descr col--sm-3">
-					<span>Учись только у профессионалов</span>
-				</div>
+	<h2 class="advantages-title col--sm-3 col--lg-2">Задаем темп</h2>
+	<div class="col col--sm-4 col--lg-1">
+		<div class="advantages_item advantages__item--bg-stuff">
+			<h3 class="advantages__item-title">Состав</h3>
+			<div class="advantages__item-descr col--sm-3">
+				<span class="genres_mobile-txt"class="genres_mobile-txt">Учись только у профессионалов</span>
+				<span class="advantages_desctop-txt">Тебя будут обучать профессионалы с высшим музыкальным образованием</span>
 			</div>
 		</div>
-		<div class="col col--sm-4">
-			<div class="advantages_item advantages__item--bg-result">
-				<h3 class="advantages__item-title">Результат</h3>
-				<div class="advantages__item-descr col--sm-3">
-					Выступай на отчестных концертах
-				</div>
+	</div>
+	<div class="col col--sm-4 col--lg-1">
+		<div class="advantages_item advantages__item--bg-result">
+			<h3 class="advantages__item-title">Результат</h3>
+			<div class="advantages__item-descr col--sm-3">
+				<span class="genres_mobile-txt">Выступай на отчестных концертах</span>
+				<span class="advantages_desctop-txt">Выступи на очетном концерте через три месяца обучения</span>
 			</div>
 		</div>
+	</div>
+	<div class="col col--sm-3 col--lg-1">
+		<div class="advantages_item advantages__item--bg-studio">
+			<h3 class="advantages__item-title">Студия</h3>
+			<div class="advantages__item-descr col--sm-3">
+				<span class="genres_mobile-txt">Записывай песни каждый месяц</span>
+				<span class="advantages_desctop-txt">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</span>
+			</div>
+		</div>
+	</div>
+	<div class="advantages_item-introductory-lesson">
+		<h2 class="genres__item-introductory-lesson">ВВОДНЫЙ УРОК</h2>
+	</div>
 
-		<div class="col col--sm-3">
-			<div class="advantages_item advantages__item--bg-studio">
-				<h3 class="advantages__item-title">Студия</h3>
-				<div class="advantages__item-descr col--sm-3">
-					Записывай песни каждый месяц
-				</div>
-			</div>
-		</div>
-		<div class="advantages_item-introductory-lesson">
-			<h2 class="genres__item-introductory-lesson">ВВОДНЫЙ УРОК</h2>
-		</div>
+	<form class="form__trial advantages__form">
+		<h4 class="form__title">Вводный урок</h4>
+		<span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
+		<input class="form__input_txt" type="text" name="name" placeholder="Имя">
+		<input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+		<select class="form__input_txt select" name="lessons" id="">
+			<option value="" style='display:none;'>Направления</option>
+			<option class="form__option" value="">Гитара</option>
+			<option class="form__option" value="">Вокал</option>
+			<option class="form__option" value="">Фортепиано</option>
+			</select>
+		<input class="form__btn advantages_btn" type="submit" value="Записаться">
+	</form>
+     
 </section>
 
 
 <section class="video mobile-container">
-	<h2 class="video-title col--sm-3">В стенах школы</h2>
+	<h2 class="video-title col--sm-3 col--lg-2">В стенах школы</h2>
 	<div class="carousel">
 		 <div class="carousel_item carousel_item-1">
 		 	<span class="video-carousel-title">Зимняя вишня</span><br>
@@ -148,17 +165,61 @@
 		 <div class="carousel_item carousel_item-3"><span class="video-carousel-title">Летний штиль</span><br>За кулисми концерта </div>
 		 <div class="carousel_item carousel_item-4"><span class="video-carousel-title">Сергей Трофимов</span><br>ЛЮБЭ - Выйду в поле с конем</div>
 	</div>
+
+	<div class="video-container">
+		<div class="video-wide">
+			<h3 class="video-title-wide">Зимняя вишня</h3>
+			<div class="video-text">
+				<span class="video-text-wide">
+				Заключительный зимний концерт 2017 годы выступало 97 учеников
+				</span>
+			</div>
+		</div>
+		<div class="video-container-small">
+			<div class="video-small solo">
+				<h5 class="video__subtitle">Янг Чжо</h5>
+				<span class="inner__text video__text">Репетиция сольной партии скрипки</span>
+			</div>
+			<div class="video-small concert">
+				<h5 class="video__subtitle">Летний стиль</h5>
+				<span class="inner__text video__text">За кулисами концерта</span>
+			</div>
+			<div class="video-small bart">
+				<h5 class="video__subtitle">Сергей Трофимов</h5>
+				<span class="inner__text video__text">ЛЮБЭ - Выйду в поле с конем</span>
+			</div>
+		</div>
+		
+	</div>
 </section>
 
 <section class="location  mobile-container">
 	<h2 class="location-title col--sm-3">Ждем тебя</h2>
     <span class="address col--sm-2">СПб, 6-я Линия ВО, 42 +7 (812) 566 56 56</span>
 
-    <div id="map" class="map">
+    <div id="map" class="map-mobile">
     	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37607ad30bca740111c28c13b70378437c75ab0c0eeda8031a1a1a87a25f79b4&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
 
+    <div class="map-desctop">
+    	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37607ad30bca740111c28c13b70378437c75ab0c0eeda8031a1a1a87a25f79b4&amp;width=870&amp;height=468&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
     <div class="introductory-lesson__btn">ВВОДНЫЙ УРОК</div>
+
+    <form class="form__trial advantages__form location__form">
+		<h4 class="form__title">Вводный урок</h4>
+		<span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
+		<input class="form__input_txt" type="text" name="name" placeholder="Имя">
+		<input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+		<select class="form__input_txt select" name="lessons" id="">
+			<option value="" style='display:none;'>Направления</option>
+			<option class="form__option" value="">Гитара</option>
+			<option class="form__option" value="">Вокал</option>
+			<option class="form__option" value="">Фортепиано</option>
+			</select>
+		<input class="form__btn advantages_btn" type="submit" value="Записаться">
+	</form>
 </section>
 
 
@@ -171,32 +232,6 @@
 			<li class="socials__item"><a href="#" class="socials__link">vkontakte</a></li>
 		</ul>
 </footer>
-
-
-
-
-
-
-<!-- <form action="">
-	<select data-placeholder="Choose your life" name="" class="field-select">
-		<option value="">rw</option>
-		<option value="">df</option>
-		<option value="">hd</option>
-		<option value="">jf</option>
-		<option value="">lg</option>
-	</select>
-
-	<select name="" class="field-select  field-select--border">
-		<option value="">гоги</option>
-		<option value="">лори</option>
-		<option value="">дина</option>
-		<option value="">ноги</option>
-		<option value="">нина</option>
-	</select>
-</form>
-
-<hr>
-<a href="#trial" rel="modal:open">GGGGGG</a> -->
 
 
 
