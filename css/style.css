@@ -34,7 +34,8 @@ body {
 }
 .page-header__top {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 17px;
   position: absolute;
   width: 320px;
@@ -56,6 +57,9 @@ body {
   color: #f9fcfc;
 }
 
+.burger {
+  padding-left: 97px;
+}
 .main-nav__item {
   text-decoration: none;
   color: #fff;
@@ -101,6 +105,7 @@ body {
 }
 
 .genres, .advantages {
+  width: 288px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -179,7 +184,7 @@ body {
 .genres__item-all{
   position: absolute;
   bottom: 25%;
-  left: -35%;
+  left: -42.5%;
 
   font-family: "PT Sans";
   font-size: 16px;
@@ -198,7 +203,7 @@ body {
 .genres__item-introductory-lesson {
   position: absolute;
   bottom: 15%;
-  left: -5%;
+  left: -13.7%;
 
   font-family: "PT Sans";
   font-size: 16px;
@@ -230,6 +235,22 @@ body {
   height: 186px;
 }
 
+.carousel {
+  width: 240px;
+  margin: auto;
+}
+
+.carousel_item {
+
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: normal;
+  color: #f9fcfc;
+  padding-left: 11px;
+  padding-right: 15px;
+  padding-top: 135px;
+}
+
 .carousel_item-1 {
   background-image: url(../img/video_mobile_card_img_1.jpg);
   background-repeat: no-repeat;
@@ -239,6 +260,7 @@ body {
   background-image: url(../img/video_mobile_card_img_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 120px;
   
 }
 .carousel_item-3 {
@@ -252,22 +274,62 @@ body {
   background-size: cover;
 }
 
-.carousel_item {
 
-  font-family: "PT Sans";
-  font-size: 18px;
-  font-weight: normal;
-  color: #f9fcfc;
-  padding-left: 11px;
-  padding-right: 15px;
-  padding-top: 135px;
-}
 .video-carousel-title {
   font-weight: bold;
 }
 
 .video-title_not-displayed {
   display: none;
+}
+
+.video {
+  width: 90%;
+}
+
+.slick-prev {
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color: rgba(0,0,0,0);
+  width: 0;
+  height: 0;
+}
+.slick-prev:before {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #eec643;
+  border-left: 1px solid #eec643;
+  transform: rotate(-45deg);
+}
+
+.slick-next {
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color: rgba(0,0,0,0);
+  width: 0;
+  height: 0;
+}
+
+.slick-next:after {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #eec643;
+  border-left: 1px solid #eec643;
+  transform: rotate(135deg);
+}
+
+.location {
+  width: 288px;
 }
 .address {
   display: inline-block;
@@ -276,6 +338,7 @@ body {
   font-weight: normal;
   line-height: 22px;
   margin-bottom: 16px;
+  width: 60%;
 }
 
 .map-mobile {
@@ -558,7 +621,7 @@ body {
   background-image: url(../img/directions_desctop_card_img_4.jpg);
   background-size: cover;
 
-
+  margin-left: -21px;
 }
 
 .genres__item--bg-all {
@@ -652,7 +715,7 @@ body {
   position: absolute;
   top: 8px;
 
-  width: 46.5%;
+  width: 49%;
   font-size: 50px;
   line-height: 50px;
 }
