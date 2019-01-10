@@ -39,7 +39,7 @@ body {
   position: absolute;
   width: 320px;
   top: 0;
-  background-color: #000;
+  /*background-color: #000;*/
 }
 .logo {
   font-family: "Prata";
@@ -47,7 +47,9 @@ body {
   color: #eec643;
   text-decoration: none;
 }
-
+.main-nav {
+  display: none;
+}
 .main-nav__list {
   list-style: none;
   padding: 0;
@@ -86,7 +88,7 @@ body {
   margin: auto;
   background-color: #eec643;
   position: absolute;
-  bottom: 130px;
+  top: 450px;
 
 }
 
