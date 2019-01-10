@@ -255,6 +255,7 @@ body {
   background-image: url(../img/video_mobile_card_img_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 120px;
 }
 .carousel_item-2 {
   background-image: url(../img/video_mobile_card_img_2.jpg);
@@ -272,6 +273,7 @@ body {
   background-image: url(../img/video_mobile_card_img_4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 120px;
 }
 
 
