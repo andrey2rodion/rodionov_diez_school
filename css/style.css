@@ -1039,6 +1039,13 @@ div.carousel {
   color: black;
 }
 
+.burger {
+  display: none;
+}
+.main-nav {
+  display: inline-block;
+}
+
 .col--lg-1 { width: 25%; }
 .col--lg-2 { width: 50%; }
 .col--lg-3 { width: 75%; }
